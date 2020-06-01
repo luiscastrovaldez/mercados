@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+    defaultConfig {
+        applicationId "pe.com.minagri.mercados"
+        minSdkVersion 15
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.github.clans:fab:1.6.2'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'net.sourceforge.jexcelapi:jxl:2.6.12'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'commons-net:commons-net:3.6'
+    implementation 'android.arch.persistence.room:runtime:1.1.1'
+    annotationProcessor 'android.arch.persistence.room:compiler:1.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    // https://mvnrepository.com/artifact/com.google.maps.android/android-maps-utils
+    implementation 'com.google.maps.android:android-maps-utils:0.4+'
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+    implementation 'commons-httpclient:commons-httpclient:3.1'
+
+
+
+
+}

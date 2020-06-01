@@ -1,4 +1,0 @@
-#Thu Apr 23 23:18:22 PET 2020
-base.0=/Users/luis/Proyectos/minagri/workspace/mercados/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
